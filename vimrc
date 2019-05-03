@@ -5,6 +5,8 @@ endif
 "let mapleader=","
 syntax enable " There's a difference between 'enable' and 'on'
 colorscheme gruvbox
+set background=dark "Kitty needs this
+let &t_ut='' "Prevents backgroundcolor glitches when scrolling in Kitty
 set encoding=utf-8 "Dear lord, that fixed so many issues
 set ttimeoutlen=50 "Prevents delay when swtiching modes
 set autoindent
@@ -39,7 +41,7 @@ nnoremap <CR> o<Esc>
 inoremap jj <Esc>
 nnoremap <Leader>r :reg<CR>
 nnoremap <silent><Leader>m :make<CR>
-"inoremap { {}<Left><CR><CR><Up><Tab> 
+"inoremap { {}<Left><CR><CR><Up><Tab>
 inoremap () ()<Left>
 inoremap (; ();<Left><Left>
 " Edit and reload vimrc

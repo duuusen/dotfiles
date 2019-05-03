@@ -12,6 +12,12 @@ bindkey -v
 # powerlevel9k theme
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
 POWERLEVEL9K_DISABLE_RPROMPT=true
+
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 

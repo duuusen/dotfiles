@@ -16,7 +16,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'justinmk/vim-dirvish'
 
 call vundle#end()
 filetype plugin indent on
