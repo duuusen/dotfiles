@@ -18,6 +18,9 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
+# npm binaries > Kitty does not recognize homebrew, gatsby etc without this 
+export PATH=/usr/local/share/npm/bin:$PATH
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
