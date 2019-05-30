@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/duy/.oh-my-zsh"
+source ~/.profile
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -15,11 +16,13 @@ POWERLEVEL9K_DISABLE_RPROMPT=true
 
 autoload -Uz compinit
 compinit
+
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
 # npm binaries > Kitty does not recognize homebrew, gatsby etc without this 
-export PATH=/usr/local/share/npm/bin:$PATH
+# export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
